@@ -1,9 +1,10 @@
 body{
-    background-color: #34B697;
+   
     scroll-behavior: smooth;
 }
 
 *{
+     background-color: #a7ffff;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -21,27 +22,34 @@ body{
     justify-content: space-around;
 }
 
+
 h4{
-height: 36px;
-left: 161px;
+font-size: 24px;
 
 }
 
 h2 { 
-height: 56px;
-left: 161px;
+    font-weight: bold;
+font-size: 40px;
+
 }
+
 
 p {
-height: 54px;
-left: 164px;
+font-size: 18px;
 
 }
+
 
 
 .btn-daftar {
-    border-radius: 20px;
-    padding: 10px 40px;
+    background-color:beige;
+    border-radius: 30px;
+    padding: 8px;
+    width: 140px;
+    height: 60px;
+    font-weight: 900;
+    font-size: 18px;
     
 }
 
