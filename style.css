@@ -1,5 +1,6 @@
 body{
     background-color: #34B697;
+    scroll-behavior: smooth;
 }
 
 *{
@@ -23,19 +24,18 @@ body{
 h4{
 height: 36px;
 left: 161px;
-top: 310px;
+
 }
 
 h2 { 
 height: 56px;
 left: 161px;
-top: 100px;
 }
 
 p {
 height: 54px;
 left: 164px;
-top: 572px;
+
 }
 
 
@@ -78,6 +78,7 @@ li a{
     align-items: center;
     height: 100dvh;
     gap: 200px;
+    
 }
 
 
