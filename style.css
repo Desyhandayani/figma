@@ -10,6 +10,8 @@ body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
+
+
 .navbar{
     position: fixed;
     top: 0;
@@ -100,3 +102,5 @@ footer{
     padding-left: 10px;
 
 }
+
+
