@@ -1,0 +1,95 @@
+body {
+    scroll-behavior: smooth;
+  }
+  
+  * {
+    background-color: #a7ffff;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+    justify-content: space-around;
+  }
+  
+  h4 {
+    font-size: 24px;
+  }
+  
+  h2 {
+    font-weight: bold;
+    font-size: 40px;
+  }
+  
+  p {
+    font-size: 18px;
+  }
+  
+  .btn-daftar {
+    background-color: beige;
+    border-radius: 30px;
+    padding: 8px;
+    width: 140px;
+    height: 60px;
+    font-weight: 900;
+    font-size: 18px;
+  }
+  
+  .btn-daftar:hover {
+    background-color: black;
+    color: white;
+    transition: all 0.2s;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  ul {
+    display: flex;
+    gap: 30px; /* jarak antar link */
+    padding: 14px;
+  }
+  li {
+    list-style: none;
+    font-weight: 600;
+  }
+  
+  li a {
+    text-decoration: none; /* untuk menghilangkan garis di bawah link */
+    color: black;
+  }
+  
+main table, th, td {
+    border:1px solid black;
+    margin: 0 auto;
+    border-collapse: collapse;
+   
+  }
+  
+  
+  th, td {
+    text-align: center; 
+    padding: 10px; 
+  }
+  
+
+  footer {
+    padding-left: 10px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    bottom: 0;
+  }
