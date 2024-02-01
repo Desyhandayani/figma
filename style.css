@@ -1,9 +1,10 @@
 body {
   scroll-behavior: smooth;
+  background-color: #a7ffff;
 }
 
 * {
-  background-color: #a7ffff;
+ 
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -20,6 +21,8 @@ body {
   width: 100%;
   padding: 5px;
   justify-content: space-around;
+  background-color:rgba(140, 219, 219, 0.932);
+
 }
 
 h4 {
