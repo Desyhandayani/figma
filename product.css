@@ -1,92 +1,171 @@
 body {
-    scroll-behavior: smooth;
-    background-color: #a7ffff;
+  scroll-behavior: smooth;
+  background-color: #a7ffff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 5px;
+  justify-content: space-around;
+  background-color:#a7ffff;
+  z-index: 9999;
+
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+ul {
+  display: flex;
+  gap: 30px; /* jarak antar link */
+  padding: 14px;
+}
+li {
+  list-style: none;
+  font-weight: 600;
+}
+
+li a, .dropbtn {
+  text-decoration: none; /* untuk menghilangkan garis di bawah link */
+  color: black;
+  display: inline-block;
+  text-align: center;
+
+}
+
+
+
+li.dropdown2 {
+  display: inline-block;
+}
+
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: #a7ffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content2 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+
+.dropdown-content2 a:hover {background-color: rgba(140, 219, 219, 0.932);}
+
+.dropdown2:hover .dropdown-content2 {
+  display: block;
+}
+
+
+main table,
+th,
+td {
+  border: 1px solid black;
+  margin: 0 auto;
+  border-collapse: collapse;
+
+  z-index: 1;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 10px;
+}
+
+
+tr:hover{
+  background-color: #949c9c8a;
+}
+
+.dropdown {
+  position: relative;
+  z-index: 2;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #a7ffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  left: 23%;
+  font-size: 14;
+}
+
+
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+footer {
+  padding-left: 10px;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  bottom: 0;
+}
+
+
+#hamburger {
+  display: none;
+}
+
+
+@media only screen and (max-width: 650px) {
+
+  .hidden {
+    display: none;
   }
-  
-  * {
-   
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: "Poppins", sans-serif;
+
+  #hamburger {
+    display: block;
+    margin-left: 160px;
+
+  }
+
+  .navbar ul {
+    font-size: 12px;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
   }
   
   .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     width: 100%;
-    padding: 5px;
-    justify-content: space-around;
-    background-color:rgba(140, 219, 219, 0.932);
+    padding: 10px 50px;
   }
 
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
+  .navbar .logo {
+    font-size: 18px;
   }
-  
-  ul {
-    display: flex;
-    gap: 30px; /* jarak antar link */
-    padding: 14px;
-  }
-  li {
-    list-style: none;
-    font-weight: 600;
-  }
-  
-  li a {
-    text-decoration: none; /* untuk menghilangkan garis di bawah link */
-    color: black;
-  }
-  
-main table, th, td {
-    border:1px solid black;
-    margin: 0 auto;
-    border-collapse: collapse;
-  
-   
-  }
-  
-  
-  th, td {
-    text-align: center; 
-    padding: 10px; 
-  }
-
-
-  .dropdown {
-    position: relative;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color:rgba(140, 219, 219, 0.932);
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
-    left: 23%;  
-    font-size: 14;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  
-
-  footer {
-    padding-left: 10px;
-    text-align: center;
-    height: 50px;
-    line-height: 50px;
-    width: 100%;
-    bottom: 0;
-  }
+}

@@ -16,15 +16,28 @@
     <header style="margin-bottom: 120px;">
         <div class="navbar">
           <div class="logo">Desywoozi</div>
-          <ul>
+          <div id="hamburger" style="font-size: 30px;">=</div>
+          <ul id="menu" class="hidden">
             <li><a href="index.html">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="product.html">Product</a></li>
+            <li><a href="https://github.com/Desyhandayani" target= "_blank">About</a></li>
+            <li class="dropdown2">
+              <a href="product.html" class="dropbtn">Product</a>
+              <div class="dropdown-content2">
+                <a href="#">Lightstick ver 2</a>
+                <a href="#">Album FML</a>
+                <a href="#">Photo Card</a>
+                <a href="#">Poster</a>
+                <a href="#">Konser</a>
+              </div>
+            </li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
       </header>
       <main>
+
+      
+        
         
             <table style="width: 70%;">
                 <tr>
@@ -32,7 +45,7 @@
                     <th colspan="2"> Product </th>
                     <th>Harga </th>
                   </tr>
-                  <tr>
+                  <tr id="Lightstick">
                     <td>1</td>
                     <td><img src="img/light.png" alt="Lightstick" width="100px" height="100px"></td>
                     <td class="dropdown"><span> Lightstick ver 2 </span>
@@ -42,7 +55,7 @@
                     </td>
                     <td>Rp 1.500.000</td>
                  </tr>
-                  <tr>
+                  <tr id="Album">
                     <td>2</td>
                     <td><img src="img/album.png" alt="album" width="70px" height="80px" ></td>
                     <td class="dropdown"><span>Album FML</span>
@@ -52,6 +65,7 @@
                     </td>
                     <td>Rp 300.000</td>
                   </tr>
+                  <tr id="photocard"> 
                     <td>3</td>
                     <td><img src="img/photocard.png" alt="photocard" width="70px" height="90px"></td>
                     <td class="dropdown"><span>Photo Card </span>    
@@ -61,6 +75,7 @@
                    </td>
                     <td>Rp 150.000</td>
                   </tr>
+                  <tr id="Poster">
                     <td>4</td>
                     <td><img src="img/poster.png" alt="poster" width="80px" height="80px"></td>
                     <td class="dropdown"><span>Poster</span>  
@@ -70,6 +85,7 @@
                     </td>    
                     <td>Rp 100.000</td>
                   </tr>
+                  <tr id="konser">
                     <td>5</td>
                     <td><img src="img/konser.jpg" alt="konser"width="75px" height="80px"></td>
                     <td class="dropdown"> <span>Konser</span> 
@@ -87,5 +103,14 @@
       </main>
  
       <footer>&copy 2024 Desywoozi.</footer>
+
+      <script>
+        const Hamburger = document.getElementById('hamburger')
+        const Menu = document.getElementById('menu')
+    
+        Hamburger.addEventListener('click', () => {
+          Menu.classList.toggle('hidden')
+        })
+      </script>
 </body>
 </html>
